@@ -1,24 +1,24 @@
 import Link from "next/link";
 
-export default function Front() {
+export default function Bought() {
   return (
     <div className="flex flex-col space-y-3 py-10">
       <div className="flex">
         <Link
-          href={"frontpage/community"}
+          href={"/practice/frontpage/community"}
           className=" pl-1 ml-5 text-lg text-gray-700 font-semibold cursor-pointer border-b "
         >
           Community
         </Link>
         <Link
-          href={"frontpage/chats"}
+          href={"/practice/frontpage/chats"}
           className=" pl-1 ml-5 text-lg text-gray-700 font-semibold cursor-pointer border-b "
         >
           Chats
         </Link>
       </div>
       {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((_, i) => (
-        <Link key={i} href={`frontpage/${i}`}>
+        <Link key={i} href={`/practice/frontpage/${i}`}>
           <div className="flex justify-between cursor-pointer px-4 pb-4 border-b border-gray-700">
             <div className="p-2 flex space-x-2">
               <div className="bg-gray-400 w-20 h-20 rounded-md" />
